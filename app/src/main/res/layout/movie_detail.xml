@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Movie Title(Year)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/detail_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:text="Action | Drama | Comedy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_generic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="175dp"
+            android:layout_height="225dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/detail_poster"/>
+
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="wrap_content"
+             android:layout_height="225dp">
+
+
+             <TextView
+                 android:text="Rating"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/detail_rating"
+                 android:layout_weight="1" />
+
+             <TextView
+                 android:text="Metascore"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/detail_metascore"
+                 android:layout_weight="1" />
+
+             <TextView
+                 android:text="Awards"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/detail_awards"
+                 android:layout_weight="1" />
+
+
+         </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Cast and Crew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_cast" />
+
+    <TextView
+        android:text="Narration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_narration" />
+
+
+</LinearLayout>
+    </ScrollView>
